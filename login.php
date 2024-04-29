@@ -57,5 +57,34 @@ foreach ($users as $table => $user_data) {
     }
 }
 
+// Check if form is submitted
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    // This is the email and password you got from the form
+    $email_from_form = $_POST['email'];
+    $password_from_form = $_POST['password'];
+
+    // Get the hashed password from the database
+    $sql = "SELECT * FROM Admin WHERE email = ?";
+    $stmt = $conn->prepare($sql);
+    $stmt->bind_param("s", $email_from_form);
+    $stmt->execute();
+    $result = $stmt->get_result();
+    $user = $result->fetch_assoc();
+
+    // Check if the password is correct
+    if (password_verify($password_from_form, $user['password'])) {
+        // Password is valid, start a new session and save the user's email to the session
+        session_start();
+        $_SESSION['email'] = $user['email'];
+
+        // Redirect to the admin page
+        header("Location: admin.html");
+        exit;
+    } else {
+        // Invalid password
+        echo 'Invalid password.';
+    }
+}
+
 $conn->close();
 ?>
