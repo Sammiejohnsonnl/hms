@@ -89,15 +89,15 @@ body {
   input[type="text"],
   input[type="password"] {
     background-color: #f2f2f2;
-    border: none;
+    border: 1px solid #393535;
     padding: 10px;
     margin-bottom: 10px;
     border-radius: 5px;
   }
   
   input[type="submit"] {
-    background-color: #f2f2f2;
-    color: white;
+    background-color: #ac9bbc;
+    color: rgb(0, 0, 0);
     border: none;
     padding: 10px 20px;
     border-radius: 5px;
@@ -111,7 +111,7 @@ body {
     margin-bottom: 20px;
     border: 1px solid #393535;
     border-radius: 5px;
-    background-color: transparent;
+    background-color: #f2f2f2;
     color: rgb(0, 0, 0);
 }
   
