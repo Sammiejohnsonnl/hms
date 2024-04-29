@@ -1,0 +1,180 @@
+/* Reset default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Main styles */
+.admin-page {
+    display: flex;
+}
+
+.left-side {
+    padding-top: 100px;
+    background-color: #4c407e;
+    color: white;
+    width: 250px;
+    position: relative;
+    /* To position the logo */
+}
+
+.logo {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    width: 50px;
+    /* Adjust the size of the logo */
+    height: 50px;
+    border-radius: 50%;
+    /* Create a circle */
+    background-color: white;
+    /* Set the background color of the circle */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.link,
+.option,
+a {
+    padding: 10px;
+    cursor: pointer;
+}
+
+.link a {
+    color: white;
+    text-decoration: none;
+}
+
+.link:hover,
+.option:hover,
+a:hover {
+    background-color: #55d19f;
+}
+
+.links {
+    position: absolute;
+    top: 80px;
+    /* Adjust this value to position the links below the logo */
+    left: 20px;
+}
+
+.right-side {
+    flex-grow: 1;
+    padding: 20px;
+    background-color: white;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 10px;
+}
+
+input,
+textarea,
+select {
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+
+button {
+    background-color: #4c407e;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.error-message {
+    color: red;
+}
+
+.navbar {
+    overflow: hidden;
+    background-color: #4c407e;
+    padding: 10px;
+    margin-bottom: 20px; /* Adjust as needed */
+}
+
+.navbar a {
+    float: left;
+    display: block;
+    color: #fcfcfc;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.navbar a:hover {
+    background-color: #55d19f;
+    color: rgb(255, 255, 255);
+}
+
+.active-link {
+    color: white !important;
+}
+
+.stats {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px; /* Adjust as needed */
+}
+
+.stat {
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-radius: 5px;
+    width: calc(33% - 10px); /* Adjust as needed */
+}
+
+.stat h3 {
+    margin-bottom: 10px;
+    color: #4c407e; /* Adjust color as needed */
+}
+
+.admin-dashboard {
+    background-color: #4c407e;
+    color: white;
+    padding: 20px;
+    margin-bottom: 20px; /* Adjust as needed */
+}
+
+.admin-dashboard h2 {
+    margin: 0; /* Remove default margin */
+}
+
+html, body {
+    height: 100%; /* Make the body take up the full viewport height */
+}
+
+.admin-page {
+    height: 100%; /* Make .admin-page take up the full height of its parent */
+}
+
+.left-side, .right-side {
+    height: 100%; /* Make .left-side and .right-side take up the full height of their parent */
+}
+
+#basic-info-form {
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-radius: 5px;
+    margin-bottom: 20px; /* Adjust as needed */
+}
+
+#basic-info-form h3 {
+    margin-bottom: 10px;
+    color: #4c407e; /* Adjust color as needed */
+}
+

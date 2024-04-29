@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="loggedIn.css">
+    <title>Profile</title>
+</head>
+
+<body>
+    <div class="admin-page">
+        <div class="left-side">
+            <div class="logo">
+                <img src="images/logo2.png" alt="Logo">
+            </div>
+            <div class="link">
+                <a href="dashboard.html" id="dashboard">Dashboard</a>
+            </div>
+            <div class="link">
+                <a href="profile.html" id="profile">Profile</a>
+            </div>
+
+            <div class="link">
+                <a href="userManagement.html" id="user-management">User Management</a>
+            </div>
+            
+            <div class="link">
+                <a href="../login.html" id="logout">Logout</a>
+            </div>
+        </div>
+        <div class="right-side">
+            <form id="user-form">
+                <div class="admin-dashboard">
+                    <h2>Profile</h2>
+                </div>
+                <form id="basic-info-form">
+                    <h3>Basic Information</h3>
+                    <label for="full-name">Full Name:</label>
+                    <input type="text" id="full-name" name="full-name" required>
+                    <label for="pronunciation">Pronunciation:</label>
+                    <input type="text" id="pronunciation" name="pronunciation">
+                    <label for="email">Email Address:</label>
+                    <input type="email" id="email" name="email" required>
+                    <label for="pronouns">Pronouns:</label>
+                    <input type="text" id="pronouns" name="pronouns">
+                    <label for="student-id">Student ID:</label>
+                    <input type="text" id="student-id" name="student-id" required>
+                    <button type="submit">Save</button>
+                </form>
+        </div>
+    </div>
+</body>

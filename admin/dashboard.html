@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="loggedIn.css">
+    <title>Dashboard</title>
+</head>
+
+<body>
+    <div class="admin-page">
+        <div class="left-side">
+            <div class="logo">
+                <img src="images/logo2.png" alt="Logo">
+            </div>
+            <div class="link">
+                <a href="dashboard.html" id="dashboard">Dashboard</a>
+            </div>
+            <div class="link">
+                <a href="profile.html" id="profile">Profile</a>
+            </div>
+
+            <div class="link">
+                <a href="userManagement.html" id="user-management">User Management</a>
+            </div>
+            
+            <div class="link">
+                <a href="../login.html" id="logout">Logout</a>
+            </div>
+        </div>
+        <div class="right-side">
+            <div class="admin-dashboard">
+                <h2>Dashboard</h2>
+            </div>
+            <div class="stats">
+                <div class="stat">
+                    <h3>Today Appointments</h3>
+                    <p id="today-appointments">1</p>
+                </div>
+                <div class="stat">
+                    <h3>All Completed Appointments</h3>
+                    <p id="completed-appointments">1</p>
+                </div>
+                <div class="stat">
+                    <h3>Future Appointments</h3>
+                    <p id="future-appointments">1</p>
+                </div>
+            </div>
+            <!-- Rest of your form goes here -->
+        </div>
+
+    </div>
+</body>
+
+<script>
+    window.onload = function () {
+        document.getElementById('create-user-link').classList.add('active-link');
+    }
+</script>
+
+</html>
