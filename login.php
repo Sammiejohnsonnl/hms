@@ -14,26 +14,26 @@ if ($conn->connect_error) {
 // Define users
 $users = [
   'admin' => [
-    ['email' => 'jotaro.kujo@gmail.com', 'password' => ''],
-    ['email' => 'semi.lovato@gmail.com', 'password' => '']
+    ['email' => 'jotaro.kujo@gmail.com', 'password' => '1234'],
+    ['email' => 'semi.lovato@gmail.com', 'password' => '12345']
   ],
   'doctors' => [
-    ['email' => 'john.doe@gmail.com', 'password' => ''],
-    ['email' => 'jane.smith@gmail.com', 'password' => '']
+    ['email' => 'john.doe@gmail.com', 'password' => '321'],
+    ['email' => 'jane.smith@gmail.com', 'password' => '3211']
   ],
   'front_desk_staff' => [
-    ['email' => 'charlie.brown@gmail.com', 'password' => ''],
-    ['email' => 'david.davis@gmail.com', 'password' => '']
+    ['email' => 'charlie.brown@gmail.com', 'password' => '321'],
+    ['email' => 'david.davis@gmail.com', 'password' => '3211']
   ],
   'nurses' => [
-    ['email' => 'alice.johnson@gmail.com', 'password' => ''],
-    ['email' => 'bob.williams@gmail.com', 'password' => '']
+    ['email' => 'alice.johnson@gmail.com', 'password' => '321'],
+    ['email' => 'bob.williams@gmail.com', 'password' => '3211']
   ],
   'patient' => [
-    ['email' => 'jebron.lames@gmail.com', 'password' => ''],
-    ['email' => 'bames.jond@gmail.com', 'password' => ''],
-    ['email' => 'corn.cena@gmail.com', 'password' => ''],
-    ['email' => 'jichael.mackson@gmail.com', 'password' => '']
+    ['email' => 'jebron.lames@gmail.com', 'password' => '123'],
+    ['email' => 'bames.jond@gmail.com', 'password' => '234'],
+    ['email' => 'corn.cena@gmail.com', 'password' => '345'],
+    ['email' => 'jichael.mackson@gmail.com', 'password' => '456']
   ]
 ];
 
