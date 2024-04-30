@@ -11,48 +11,28 @@ if ($conn->connect_error) {
   die("Connection failed: " . $conn->connect_error);
 }
 
-// Define users
-$users = [
-  'admin' => [
-    ['email' => 'jotaro.kujo@gmail.com', 'password' => '1234'],
-    ['email' => 'semi.lovato@gmail.com', 'password' => '12345']
-  ],
-  'doctors' => [
-    ['email' => 'john.doe@gmail.com', 'password' => '321'],
-    ['email' => 'jane.smith@gmail.com', 'password' => '3211']
-  ],
-  'front_desk_staff' => [
-    ['email' => 'charlie.brown@gmail.com', 'password' => '321'],
-    ['email' => 'david.davis@gmail.com', 'password' => '3211']
-  ],
-  'nurses' => [
-    ['email' => 'alice.johnson@gmail.com', 'password' => '321'],
-    ['email' => 'bob.williams@gmail.com', 'password' => '3211']
-  ],
-  'patient' => [
-    ['email' => 'jebron.lames@gmail.com', 'password' => '123'],
-    ['email' => 'bames.jond@gmail.com', 'password' => '234'],
-    ['email' => 'corn.cena@gmail.com', 'password' => '345'],
-    ['email' => 'jichael.mackson@gmail.com', 'password' => '456']
-  ]
-];
+// Check if form is submitted
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+  $email = $_POST['email'];
+  $password_from_user = $_POST['password'];
 
-foreach ($users as $table => $userList) {
-  foreach ($userList as $user) {
-    // This is the password you got from user input
-    $password_from_user = $user['password'];
+  // Get the hashed password from the database
+  $sql = "SELECT password FROM admin WHERE email = '$email'";
+  $result = $conn->query($sql);
 
-    // Hash the password
-    $hashed_password = password_hash($password_from_user, PASSWORD_DEFAULT);
-
-    // Now you can store $hashed_password in your database
-    $sql = "UPDATE $table SET password = '$hashed_password' WHERE email = '{$user['email']}'";
-
-    if ($conn->query($sql) === TRUE) {
-      echo "Password updated successfully for {$user['email']}";
-    } else {
-      echo "Error: " . $sql . "<br>" . $conn->error;
+  if ($result->num_rows > 0) {
+    while ($row = $result->fetch_assoc()) {
+      $hashed_password_from_database = $row["password"];
     }
+
+    // Check if the password is correct
+    if (password_verify($password_from_user, $hashed_password_from_database)) {
+      echo 'Password is valid!';
+    } else {
+      echo 'Invalid password.';
+    }
+  } else {
+    echo "No user found with this email.";
   }
 }
 

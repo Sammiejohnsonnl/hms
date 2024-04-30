@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="loggedIn.css">
+    <title>User Management</title>
+</head>
+
+<body>
+    <div class="admin-page">
+        <div class="left-side">
+            <div class="logo">
+                <img src="images/logo2.png" alt="Logo">
+            </div>
+            <div class="link">
+                <a href="dashboard.html" id="dashboard">Dashboard</a>
+            </div>
+            <div class="link">
+                <a href="profile.html" id="profile">Profile</a>
+            </div>
+
+            <div class="link">
+                <a href="userManagement.html" id="user-management">User Management</a>
+            </div>
+            <div class="link">
+                <a href="../login.html" id="logout">Logout</a>
+            </div>
+        </div>
+        <div class="right-side">
+            <div class="navbar">
+                <a href="viewExistingUsers.html">Staffr</a>
+                <a href="patients.html">Patients</a>
+            </div>
+            <h2>View Existing Users</h2><br>
+            <table bgcolor="white" width="700">
+                <tr bgcolor="grey">
+                    <th width="100">Department ID</th>
+                    <th width="100">First Name</th>
+                    <th width="100">Last Name</th>
+                    <th width="100">Email</th>
+                    <th width="100">Phone Number</th>
+                    <th width="100">Edit</th>
+                    <th width="100">Delete</th>
+                </tr>
+                <!-- Doctors -->
+                <tr bgcolor="lightgrey" align="center"></tr>
+                    <td>1</td>
+                    <td>John</td>
+                    <td>Doe</td>
+                    <td>john.doe@gmail.com</td>
+                    <td>1234567890</td>
+                    <td><button class="edit-button">Edit</button></td>
+                    <td><button class="delete-button">Delete</button></td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>Jane</td>
+                    <td>Smith</td>
+                    <td>jane.smith@gmail.com</td>
+                    <td>0987654321</td>
+                    <td><button class="edit-button">Edit</button></td>
+                    <td><button class="delete-button">Delete</button></td>
+                </tr>
+                <!-- Nurses -->
+                <tr>
+                    <td>2</td>
+                    <td>Alice</td>
+                    <td>Johnson</td>
+                    <td>alice.johnson@gmail.com</td>
+                    <td>2345678901</td>
+                    <td><button class="edit-button">Edit</button></td>
+                    <td><button class="delete-button">Delete</button></td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Bob</td>
+                    <td>Williams</td>
+                    <td>bob.williams@gmail.com</td>
+                    <td>3456789012</td>
+                    <td><button class="edit-button">Edit</button></td>
+                    <td><button class="delete-button">Delete</button></td>
+                </tr>
+                <!-- Front Desk Staff -->
+                <tr>
+                    <td>3</td>
+                    <td>Charlie</td>
+                    <td>Brown</td>
+                    <td>charlie.brown@gmail.com</td>
+                    <td>4567890123</td>
+                    <td><button class="edit-button">Edit</button></td>
+                    <td><button class="delete-button">Delete</button></td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>David</td>
+                    <td>Davis</td>
+                    <td>david.davis@gmail.com</td>
+                    <td>5678901234</td>
+                    <td><button class="edit-button">Edit</button></td>
+                    <td><button class="delete-button">Delete</button></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</body>
+
+
+<script src='script.js'></script>
+
+</html>

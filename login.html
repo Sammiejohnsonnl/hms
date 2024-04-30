@@ -7,12 +7,13 @@
     <title>Login Page</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="mobile.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
 </head>
 
 <body>
     <img src="images/logo2.png" alt="Logo" class="logo-image"><br><br>
-    <form action="login.php" method="POST">
+    <form method="POST" action="login.php">
         <h2>SIGN INTO YOUR ACCOUNT</h2>
         <br>
         <label for="email">Email Address:</label><br>
@@ -26,10 +27,27 @@
     
         <input type="submit" value="Login" class="login-button">
     </form>
+    <div id="feedback"></div>
 
-    <p class="error" id="error-message"></p>
+    <script>
+        $(document).ready(function() {
+            $('#login-form').on('submit', function(e) {
+                e.preventDefault();
 
-    <script src="script.js"></script>
+                $.ajax({
+                    type: 'POST',
+                    url: 'hms.php',
+                    data: $(this).serialize(),
+                    success: function(response) {
+                        $('#feedback').html(response);
+                    },
+                    error: function(jqXHR, textStatus, errorThrown) {
+                        $('#feedback').html("Request failed: " + textStatus);
+                    }
+                });
+            });
+        });
+    </script>
 </body>
 
 </html>
