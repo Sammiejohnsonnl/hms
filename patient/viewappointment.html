@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../loggedIn.css">
+    <title>Patient Page</title>
+</head>
+
+<body>
+    <div class="patient-page">
+        <div class="left-side">
+            <div class="logo">
+                <img src="../images/logo2.png" alt="Logo">
+            </div>
+            <div class="link">
+                <a href="profile.html" id="profile">Profile</a>
+            </div>
+            <div class="link">
+                <a href="appointments.html" id="appointments">Appointments</a>
+            </div>
+            <div class="link">
+                <a href="medicalRecord.html" id="medical-record">Medical Record</a>
+            </div>
+            <div class="link">
+                <a href="../login.html" id="logout">Logout</a>
+            </div>
+        </div>
+        <div class="right-side">
+            <div class="admin-dashboard">
+                <h2>Appointments</h2>
+            </div>
+            <div class="patient-form">
+                <h2>Patient Form</h2>
+                <form id="patientForm">
+                    <label for="name">Patient Name:</label>
+                    <input type="text" id="name" name="name"><br><br>
+
+                    <label for="id">Patient ID:</label>
+                    <input type="text" id="id" name="id"><br><br>
+
+                    <label for="date">Date:</label>
+                    <input type="date" id="date" name="date"><br><br>
+
+                    <label for="appointmentType">Appointment Type:</label>
+                    <input type="text" id="appointmentType" name="appointmentType"><br><br>
+
+                    <label for="description">Description:</label>
+                    <textarea id="description" name="description"></textarea><br><br>
+
+                    <input type='button' value='Edit' onclick='editForm()' />
+                    <input type='submit' value='Save'>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+
+
+<script src='script.js'></script>
+
+</html>

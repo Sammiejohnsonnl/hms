@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../loggedIn.css">
+    <title>Patient Page</title>
+</head>
+
+<body>
+    <div class="patient-page">
+        <div class="left-side">
+            <div class="logo">
+                <img src="../images/logo2.png" alt="Logo">
+            </div>
+            <div class="link">
+                <a href="profile.html" id="profile">Profile</a>
+            </div>
+            <div class="link">
+                <a href="patients.html" id="appointments">Patients</a>
+            </div>
+            <div class="link">
+                <a href="appointments.html" id="appointments">Appointments</a>
+            </div>
+            <div class="link">
+                <a href="../login.html" id="logout">Logout</a>
+            </div>
+        </div>
+        <div class="right-side">
+            <div class="admin-dashboard">
+                <h2>Nurse Profile</h2>
+            </div>
+            <label for="first-name">First Name:</label><br>
+            <input type="text" id="first-name" name="first-name" value="" readonly><br><br>
+            <label for="last-name">Last Name:</label><br>
+            <input type="text" id="last-name" name="last-name" value="" readonly><br><br>
+            <label for="dob">Date of Birth:</label><br>
+            <input type="date" id="dob" name="dob" value="" readonly><br><br>
+            <label for="address">Address:</label><br>
+            <label id="address" name="address" readonly></label><br><br>
+            <label for="gender">Gender:</label><br>
+            <input type="text" id="gender" name="gender" value="" readonly><br><br><br>
+            <button type="submit">Edit Profile</button>
+        </div>
+    </div>
+</body>
+
+<script src='../script.js'></script>
+
+</html>

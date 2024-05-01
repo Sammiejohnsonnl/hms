@@ -1,282 +1,272 @@
 @media (max-width: 768px) {
-/* Reset some default styling */
-body, ul {
-    margin: 0;
-    padding: 0;
-}
 
-/* Apply pastel purple theme */
-body {
-    background-color: #ac9bbc;
-    color: white;
-    font-family: Arial, sans-serif;
-}
+    body,
+    ul {
+        margin: 0;
+        padding: 0;
+    }
 
-/* Background image */
-.background-image {
-    position: absolute;
-    top: 50px; /* Adjust this value based on your navigation bar height */
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-image: url('images/loginBackgroundPicture.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
-    opacity: 0.6;
-}
+    body {
+        background-color: #ac9bbc;
+        color: white;
+        font-family: Arial, sans-serif;
+    }
 
-/* Header styles */
-header {
-    padding: 20px;
-}
+    .background-image {
+        position: absolute;
+        top: 50px;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-image: url('images/loginBackgroundPicture.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+        opacity: 0.6;
+    }
 
-/* Centered header title */
-.header-title {
-    text-align: center;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-    margin-top: 50px;
-    position: relative;
-    z-index: 1;
-}
+    header {
+        padding: 20px;
+    }
 
-footer {
-    text-align: center;
-    background-color: #ffffff;
-    color: rgb(0, 0, 0);
-    padding: 10px;
-    z-index: 1;
-    margin-top: 10px;
-    position: relative; /* Add this line */
-    z-index: 1;
-}
+    .header-title {
+        text-align: center;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        margin-top: 50px;
+        position: relative;
+        z-index: 1;
+    }
 
-/* Centered body text */
-.body-text {
-    text-align: center;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-    padding: 20px;
-    position: relative;
-    z-index: 1;
-}
+    footer {
+        text-align: center;
+        background-color: #ffffff;
+        color: rgb(0, 0, 0);
+        padding: 10px;
+        z-index: 1;
+        margin-top: 10px;
+        position: relative;
+        z-index: 1;
+    }
 
-.logo-nav-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
+    .body-text {
+        text-align: center;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        padding: 20px;
+        position: relative;
+        z-index: 1;
+    }
 
-#logo {
-    width: auto;
-    height: auto;
-    max-height: 20px;
-    max-width: 200px;
-}
+    .logo-nav-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
 
-nav ul li {
-    display: inline-block;
-    margin-right: 20px;
-}
+    #logo {
+        width: auto;
+        height: auto;
+        max-height: 20px;
+        max-width: 200px;
+    }
 
-nav ul li a {
-    color: white;
-    text-decoration: none;
-}
+    nav ul li {
+        display: inline-block;
+        margin-right: 20px;
+    }
 
-/* Login button */
-.login-button {
-    background-color: #2f073c;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    font-size: 1em;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-    display: flex;
-    align-items: center;
-    text-decoration: none;
-    outline: none;
-}
+    nav ul li a {
+        color: white;
+        text-decoration: none;
+    }
 
-.login-button:hover {
-    background-color: #ac9bbc;
-}
+    .login-button {
+        background-color: #2f073c;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        font-size: 1em;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+        outline: none;
+    }
 
-/* Card container */
-.card-container {
-    display: flex;
-    flex-direction: column; /* Stack cards vertically */
-    margin: 30px auto;
-    /* Other styles for the container */
-    max-width: 800px;
-    position: relative;
-    z-index: 2;
-}
+    .login-button:hover {
+        background-color: #ac9bbc;
+    }
 
-/* About card */
-.about-card {
-    background-color: #301934;
-    color: white;
-    padding: 20px;
-    border-radius: 10px;
-    margin-top: 10px;
-    margin-bottom: -30px; /* Add spacing between cards */
-}
+    .card-container {
+        display: flex;
+        flex-direction: column;
+        margin: 30px auto;
+        max-width: 800px;
+        position: relative;
+        z-index: 2;
+    }
 
-/* Contact card */
-.contact-card {
-    background-color: #fffff2;
-    color: #301934;
-    padding: 20px;
-    border-radius: 10px;
-    margin-top: -20px;
-    margin-bottom: 20px; /* Add spacing between cards */
-}
+    .about-card {
+        background-color: #301934;
+        color: white;
+        padding: 20px;
+        border-radius: 10px;
+        margin-top: 10px;
+        margin-bottom: -30px;
+    }
 
-input[type="text"],
-  input[type="password"] {
-    background-color: #f2f2f2;
-    border: 1px solid #393535;
-    padding: 10px;
-    margin-bottom: 10px;
-    border-radius: 5px;
-  }
-  
-  input[type="submit"] {
-    background-color: #ac9bbc;
-    color: rgb(0, 0, 0);
-    border: none;
-    padding: 10px 20px;
-    border-radius: 5px;
-    cursor: pointer;
-  }
+    .contact-card {
+        background-color: #fffff2;
+        color: #301934;
+        padding: 20px;
+        border-radius: 10px;
+        margin-top: -20px;
+        margin-bottom: 20px;
+    }
 
-  .input-field {
-    width: 50%;
-    padding: 10px;
-    margin: 0 auto; /* This centers the element horizontally */
-    margin-bottom: 20px;
-    border: 1px solid #393535;
-    border-radius: 5px;
-    background-color: #f2f2f2;
-    color: rgb(0, 0, 0);
-}
+    input[type="text"],
+    input[type="password"] {
+        background-color: #f2f2f2;
+        border: 1px solid #393535;
+        padding: 10px;
+        margin-bottom: 10px;
+        border-radius: 5px;
+    }
 
-.home-link {
-    color: #ffffff;
-    text-decoration: none;
-}
+    input[type="submit"] {
+        background-color: #ac9bbc;
+        color: rgb(0, 0, 0);
+        border: none;
+        padding: 10px 20px;
+        border-radius: 5px;
+        cursor: pointer;
+    }
 
-h1 {
-    color: white;
-    text-align: center;
-    margin-bottom: 20px;
-  }
+    .input-field {
+        width: 50%;
+        padding: 10px;
+        margin: 0 auto;
+        margin-bottom: 20px;
+        border: 1px solid #393535;
+        border-radius: 5px;
+        background-color: #f2f2f2;
+        color: rgb(0, 0, 0);
+    }
 
-  h2 {
-    color: rgb(0, 0, 0);
-    text-align: center;
-    margin-bottom: 20px;
-  }
-  
-  form {
-    background-color: white;
-    padding: 20px;
-    border-radius: 10px;
-    background-color: rgba(255, 255, 255, 1);
-  }
-  
-  label {
-    color: #000000;
-  }
-  
-  input[type="text"],
-  input[type="password"] {
-    background-color: #f2f2f2;
-    border: none;
-    padding: 10px;
-    margin-bottom: 10px;
-    border-radius: 5px;
-  }
-  
-  input[type="submit"] {
-    background-color: #ac9bbc;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 5px;
-    cursor: pointer;
-  }
-  
-  .error {
-    color: red;
-  }
+    .home-link {
+        color: #ffffff;
+        text-decoration: none;
+    }
 
-  .hover {
-    background-color: #45284f;
-}
+    h1 {
+        color: white;
+        text-align: center;
+        margin-bottom: 20px;
+    }
 
-.login-button:hover {
-    background-color: #2f073c;
-}
+    h2 {
+        color: rgb(0, 0, 0);
+        text-align: center;
+        margin-bottom: 20px;
+    }
 
-  /* Override default link styles */
-.forgot-password-link {
-    float: right;
-    color: #301934; /* Set the desired link color */
-    text-decoration: none; /* Remove underlines */
-}
+    form {
+        background-color: white;
+        padding: 20px;
+        border-radius: 10px;
+        background-color: rgba(255, 255, 255, 1);
+    }
 
-.forgot-password-link:hover {
-    color: #b38dc0; /* Set the hover color */
-}
+    label {
+        color: #000000;
+    }
 
-/* Reset password button */
-.reset-password-button {
-    background-color: #301934;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    font-size: 1em;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-    display: block; /* Ensure the button takes up the full width */
-    margin: 0 auto; /* Center horizontally */
-}
+    input[type="text"],
+    input[type="password"] {
+        background-color: #f2f2f2;
+        border: none;
+        padding: 10px;
+        margin-bottom: 10px;
+        border-radius: 5px;
+    }
 
-.reset-password-button:hover {
-    background-color: #45284f;
-}
+    input[type="submit"] {
+        background-color: #ac9bbc;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 5px;
+        cursor: pointer;
+    }
 
-.back-to-login-link {
-    color: #301934; /* Set the desired link color */
-    text-decoration: none; /* Remove underlines */
-    text-align: center;
-    margin-top: 20px;
-}
+    .error {
+        color: red;
+    }
 
-.back-to-login-link:hover {
-    color: #b38dc0; /* Set the hover color */
-}
+    .hover {
+        background-color: #45284f;
+    }
 
-.logo-image {
-    display: block;
-    margin: 0 auto;
-    max-width: 40%; /* Adjust the size as needed */
-    height: auto; /* Maintain aspect ratio */
-}
+    .login-button:hover {
+        background-color: #2f073c;
+    }
 
-/* Input field styles */
-.input-field {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 20px;
-    border: 1px solid #806b6b;
-    border-radius: 5px;
-    width: 50%; /* Adjust the width as needed */
-    margin: 0 auto; /* Center horizontally */
-    background-color: transparent;
-    color: rgb(0, 0, 0);
-}
+
+    .forgot-password-link {
+        float: right;
+        color: #301934;
+        text-decoration: none;
+    }
+
+    .forgot-password-link:hover {
+        color: #b38dc0;
+    }
+
+    /* Reset password button */
+    .reset-password-button {
+        background-color: #301934;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        font-size: 1em;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+        display: block;
+        margin: 0 auto;
+    }
+
+    .reset-password-button:hover {
+        background-color: #45284f;
+    }
+
+    .back-to-login-link {
+        color: #301934;
+        text-decoration: none;
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    .back-to-login-link:hover {
+        color: #b38dc0;
+    }
+
+    .logo-image {
+        display: block;
+        margin: 0 auto;
+        max-width: 40%;
+        height: auto;
+    }
+
+    .input-field {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 20px;
+        border: 1px solid #806b6b;
+        border-radius: 5px;
+        width: 50%;
+        margin: 0 auto;
+        background-color: transparent;
+        color: rgb(0, 0, 0);
+    }
 
 }

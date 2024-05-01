@@ -1,5 +1,3 @@
-/* styles.css */
-
 body {
     background-color: #ac9bbc;
     display: flex;
@@ -107,7 +105,7 @@ body {
   .input-field {
     width: 50%;
     padding: 10px;
-    margin: 0 auto; /* This centers the element horizontally */
+    margin: 0 auto;
     margin-bottom: 20px;
     border: 1px solid #393535;
     border-radius: 5px;
@@ -127,18 +125,16 @@ body {
     background-color: #2f073c;
 }
 
-  /* Override default link styles */
 .forgot-password-link {
     float: right;
-    color: #301934; /* Set the desired link color */
-    text-decoration: none; /* Remove underlines */
+    color: #301934;
+    text-decoration: none;
 }
 
 .forgot-password-link:hover {
-    color: #b38dc0; /* Set the hover color */
+    color: #b38dc0;
 }
 
-/* Reset password button */
 .reset-password-button {
     background-color: #301934;
     color: white;
@@ -147,8 +143,8 @@ body {
     font-size: 1em;
     cursor: pointer;
     transition: background-color 0.3s ease;
-    display: block; /* Ensure the button takes up the full width */
-    margin: 0 auto; /* Center horizontally */
+    display: block;
+    margin: 0 auto;
 }
 
 .reset-password-button:hover {
@@ -156,21 +152,21 @@ body {
 }
 
 .back-to-login-link {
-    color: #301934; /* Set the desired link color */
-    text-decoration: none; /* Remove underlines */
+    color: #301934;
+    text-decoration: none;
     text-align: center;
     margin-top: 20px;
 }
 
 .back-to-login-link:hover {
-    color: #b38dc0; /* Set the hover color */
+    color: #b38dc0;
 }
 
 .logo-image {
     display: block;
     margin: 0 auto;
-    max-width: 10%; /* Adjust the size as needed */
-    height: auto; /* Maintain aspect ratio */
+    max-width: 10%;
+    height: auto;
 }
 
 

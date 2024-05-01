@@ -10,13 +10,21 @@ function validateForm() {
   return true;
 }
 
-// Get the current page URL
 const currentPageUrl = window.location.href;
-
-// Find the "Home" link
 const homeLink = document.querySelector('.topmenu a[href="index.html"]');
-
-// Add the "active" class to the "Home" link
 if (homeLink && currentPageUrl.includes('index.html')) {
   homeLink.closest('li').classList.add('active');
+}
+
+function editForm() {
+  var inputs = document.getElementById('patientForm').getElementsByTagName('input');
+  // Loop through input elements and remove readonly attribute
+  for (var i = 0; i < inputs.length; i++) {
+      inputs[i].removeAttribute('readonly');
+  }
+  // Same for textarea elements
+  var textareas = document.getElementById('patientForm').getElementsByTagName('textarea');
+  for (var i = 0; i < textareas.length; i++) {
+      textareas[i].removeAttribute('readonly');
+  }
 }

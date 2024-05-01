@@ -1,6 +1,5 @@
 <?php
-// Database connection
-$servername = "127.0.0.1"; // Changed to the host in your database dump
+$servername = "127.0.0.1";
 $username = "root";
 $password = "";
 $dbname = "hms";
@@ -11,12 +10,9 @@ if ($conn->connect_error) {
   die("Connection failed: " . $conn->connect_error);
 }
 
-// Check if form is submitted
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
   $email = $_POST['email'];
   $password_from_user = $_POST['password'];
-
-  // Get the hashed password from the database
   $sql = "SELECT password FROM admin WHERE email = '$email'";
   $result = $conn->query($sql);
 

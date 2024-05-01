@@ -1,11 +1,9 @@
-
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Main styles */
 .admin-page {
     display: flex;
 }
@@ -16,7 +14,6 @@
     color: white;
     width: 250px;
     position: relative;
-    /* To position the logo */
 }
 
 .logo {
@@ -24,7 +21,6 @@
     top: 20px;
     left: 20px;
     width: 50px;
-    /* Adjust the size of the logo */
     height: 50px;
     border-radius: 50%;
     /* Create a circle */
@@ -157,24 +153,20 @@ button {
 
 .admin-dashboard h2 {
     margin: 0;
-    /* Remove default margin */
 }
 
 html,
 body {
     height: 100%;
-    /* Make the body take up the full viewport height */
 }
 
 .admin-page {
     height: 100%;
-    /* Make .admin-page take up the full height of its parent */
 }
 
 .left-side,
 .right-side {
     height: 100%;
-    /* Make .left-side and .right-side take up the full height of their parent */
 }
 
 #basic-info-form {
@@ -198,7 +190,6 @@ table {
 th,
 td {
     border: 1px solid black;
-    /* black border around each cell */
 }
 
 .edit-button {
@@ -213,7 +204,7 @@ td {
 }
 
 .edit-button:hover {
-    background-color: rgb(163, 105, 229); 
+    background-color: rgb(163, 105, 229);
     cursor: pointer;
 }
 
@@ -223,12 +214,10 @@ td {
     color: white;
 
     border: none;
-    /* removes the default button border */
     width: 100%;
-    /* makes the button fill its column */
 }
 
 .delete-button:hover {
-    background-color: rgb(255, 80, 80); 
+    background-color: rgb(255, 80, 80);
     cursor: pointer;
 }
