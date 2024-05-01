@@ -231,3 +231,15 @@ td {
 .admin-dashboard h2 {
     margin: 0;
 }
+
+.mark-as-seen-button {
+    background-color: #55d19f;
+    color: white;
+    border: none;
+    width: 100%;
+}
+
+.mark-as-seen-button:hover {
+    background-color: #75c1a3;
+    cursor: pointer;
+}

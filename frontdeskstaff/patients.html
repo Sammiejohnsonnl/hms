@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../loggedIn.css">
+    <title>Patient Page</title>
+</head>
+
+<body>
+    <div class="patient-page">
+        <div class="left-side">
+            <div class="logo">
+                <img src="../images/logo2.png" alt="Logo">
+            </div>
+            <div class="link">
+                <a href="profile.html" id="profile">Profile</a>
+            </div>
+            <div class="link">
+                <a href="patients.html" id="Patients">Patients</a>
+            </div>
+            <div class="link">
+                <a href="viewExistingPatients.html" id="viewExistingPatients">View Patients</a>
+            </div>
+            <div class="link">
+                <a href="appointments.html" id="appointments">Appointments</a>
+            </div> 
+
+            <div class="link">
+                <a href="../login.html" id="logout">Logout</a>
+            </div>
+        </div>
+        <div class="right-side">
+            <form id="user-form">
+                <div class="navbar">
+                    <a href="patients.html" id="user-management">Register Patient</a>
+                    <a href="viewExistingPatients.html">View Patients</a>
+                </div>
+                <h2>Register Patient</h2><br>
+                <label for="first-name">First Name:</label>
+                <input type="text" id="first-name" name="first-name" required>
+                <label for="last-name">Last Name:</label>
+                <input type="text" id="last-name" name="last-name" required>
+                <label for="dob">Date of Birth:</label>
+                <input type="date" id="dob" name="dob" required>
+                <label for="address">Address:</label>
+                <textarea id="address" name="address" required></textarea>
+                <label for="gender">Gender:</label>
+                <select id="gender" name="gender" required>
+                    <option value="">Select...</option>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                    <option value="other">Other</option>
+                </select>
+                <label for="mobile">Mobile:</label>
+                <input type="tel" id="mobile" name="mobile" required>
+                <button type="submit">Register</button>
+            </form>
+        </div>
+    </div>
+</body>
+
+<script src='../script.js'></script>
+
+</html>

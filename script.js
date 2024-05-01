@@ -1,4 +1,3 @@
-// Function to validate the login form
 function validateForm() {
   var username = document.getElementById("username").value;
   var password = document.getElementById("password").value;
@@ -27,4 +26,8 @@ function editForm() {
   for (var i = 0; i < textareas.length; i++) {
       textareas[i].removeAttribute('readonly');
   }
+}
+
+function makeReadOnly() {
+  document.getElementById('first-name').readOnly = true;
 }
